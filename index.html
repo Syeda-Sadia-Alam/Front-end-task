@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/asset/css/font-awsm.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/asset/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/asset/css/responsive.css" />
+  </head>
+  <body>
+    <nav id="navToggle">
+      <div class="container">
+        <div id="nMenu" class="nav-wraper">
+          <div class="logo">
+            <a href="#">
+              <img src="/asset/images/Logo.png" alt="" />
+            </a>
+          </div>
+          <div class="menu">
+            <ul class="menu-items">
+              <li class="item"><a href="#">Home</a></li>
+              <li class="item"><a href="#">Team</a></li>
+              <li class="item"><a href="#">News</a></li>
+              <li class="item"><a href="#">Services</a></li>
+              <li class="item"><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="search">
+            <span class="s-icon"></span>
+            <input
+              id="searchBox"
+              type="search"
+              name=""
+              id=""
+              placeholder="Search"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="menuBtn" onclick="menuFunc()" class="menu-bar">
+        <img src="/asset/webfonts//bars-solid.svg" alt="Menu" />
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <div class="container">
+        <div class="hero-wraper">
+          <div class="hero-content">
+            <h1>
+              Be The <br /><span>Basketball</span> <br />Star And <br />Shine
+            </h1>
+            <p>
+              Had deep stars beginning whose days a abundantly divide don’t
+              winged stars every green saying bearing years.
+            </p>
+            <div class="cta">
+              <a href="#" class="ctaBtn">Join Now</a>
+              <div class="arrow">
+                <img src="/asset/webfonts/arrow.svg" alt="Join Now" />
+              </div>
+            </div>
+
+            <div class="count">
+              <div class="countItem">
+                <h3>120+</h3>
+                <p>Member</p>
+              </div>
+              <div class="countItem">
+                <h3>20+</h3>
+                <p>Yearly Event</p>
+              </div>
+              <div class="countItem">
+                <h3>25+</h3>
+                <p>Available Field</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <div class="img-wraper">
+              <img src="/asset/images/image 236.png" alt="" srcset="" />
+            </div>
+            <div class="img-bg">
+              <div class="info">
+                <h3>Finn Rosetta</h3>
+                <p>Forward</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function menuFunc() {
+        document.getElementById("nMenu").classList.toggle("nMenu-active");
+        document.getElementById("navToggle").classList.toggle("nav-active");
+      }
+    </script>
+  </body>
+</html>

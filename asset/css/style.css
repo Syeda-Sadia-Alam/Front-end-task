@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html a{
+    text-decoration: none;
+    color: #735CA0;
+    font-size: 16px;
+    text-align: center;
+    ;
+}
+
+.container{ 
+    margin: 0px auto;
+    max-width: 1200px;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+nav{
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    box-shadow: 0px 2px 8px #0000001f;
+    position: fixed;
+}
+
+nav .nav-wraper{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-wraper .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav .nav-wraper .logo img{
+    height: 50px;
+    width: auto;
+}
+.logo span {
+  padding-top: 5%;
+}
+nav .menu-bar{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 18px;
+    top: 14px;
+    display: none;
+}
+
+nav .menu-bar img{
+    height: 40px;
+    width: 40px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.item{
+    margin: 0.8rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.item a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item a::after{
+    content: "";
+    transition:  0.3s;
+}
+.item:hover > a::after{
+    position: absolute;
+    content: "";
+    background-color: #fea540;
+    width: 21px;
+    height: 3px;
+    bottom: -20px;
+    margin: 19px auto;
+    border-radius: 2px;
+}
+.search{
+    position: relative;
+}
+.s-icon{
+    background-image: url("/asset/webfonts/magnifying-glass-solid.svg");
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-repeat: no-repeat;
+    left: 10px;
+    bottom: 10px;
+}
+
+.search input[type="search"]{
+    appearance: none;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#searchBox{
+  height: 52px;
+  width: 248px;
+  border-style: none;
+  border-radius: 28px;
+  outline-style: none;
+  border: 1px solid #fea540;
+  transition: 0.3s;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 2.6em;
+  padding-right: 0.6em;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  background-color: transparent;
+}
+#searchBox:focus{
+  width: 260px;
+  border-style: none;
+  outline-style: none;
+  border: 2px solid #252525a4;
+  background-color: transparent;
+  
+}
+
+.hero-section{
+    padding-top: 9em;
+}
+
+.hero-wraper{
+    padding-right: 2em;
+}
+
+.hero-image{
+    width: 400px;
+    position: relative;
+    padding-top: 2em;
+}
+
+.hero-image .img-wraper{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.hero-image .img-wraper img{
+    position: absolute;
+    width: 460px;
+    height: 460px;
+    left: -70px;
+}
+.img-bg{
+    position: absolute;
+    background-color: #321765;
+
+    height: 200px;
+    width: 400px;
+    right: -50px;
+    bottom: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.info{
+    color: #ffffff;
+    margin: 1.6rem;
+}
+
+.info h3{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.info p{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.hero-content span{
+  color:#FF8A4D;
+}
+.hero-content h1{
+    font-size: 4.6em;
+    line-height: 5.2rem;
+    color: #311665;
+}
+
+.hero-content p{
+    margin-top: 1.2em;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    color:#7C6F94;
+
+}
+
+.hero-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta{
+    margin-top: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.cta .ctaBtn{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.7rem 3rem;
+    border-radius: 12px;
+    background-image: linear-gradient(135deg, #a41bff 0%, #7e13e9 100%);
+    box-shadow: 0px 2px 14px rgba(126, 19, 233, 0.363);
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.cta .ctaBtn:active{
+    transform: scale(0.94);
+}
+
+.cta .arrow{
+    height: 46px;
+    margin-left: 1.4rem;
+}
+
+.cta .arrow img{
+    height: 46px;
+    transform: rotate(10deg);
+}
+
+
+.count{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.count .countItem{
+    margin-right: 2rem;
+}
+
+.count h3{
+    color: #381D6E;
+    font-size: 2rem;
+}
+
+.count p{
+    margin-top: 0px;
+    color: #381D6E;
+}
